@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { forwardRef, useEffect } from 'react';
 import LandingPage from '../components/LandingPage';
 import SideBar from '../components/SideBar';
 import '../App.css';
 
-const Home = () => {
+const Home = ({parallax}) => {
+  
+
   return (
     <div className='homeContainer'>
-      <SideBar />
+      <SideBar parallax={parallax}    />
       <LandingPage />
     </div>
   );

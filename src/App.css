@@ -72,12 +72,13 @@ body,
 .typeAnimation {
   color: #fff;
   opacity: 1;
-  font-size: 2em;
+  font-size: 1.2em;
   z-index: 99;
+  font-weight: 600;
 }
 
 .welcome {
-  font-size: 28px;
+  font-size: .8em;
   font-weight: 500;
   z-index: 99;
 }
