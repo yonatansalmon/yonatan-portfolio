@@ -7,10 +7,9 @@ const Home = ({parallax}) => {
   
 
   return (
-    <div className='homeContainer'>
-      <SideBar parallax={parallax}    />
-      <LandingPage />
-    </div>
+    <section className='HomeContainer'>
+      <LandingPage  parallax={parallax}/>
+    </section>
   );
 };
 

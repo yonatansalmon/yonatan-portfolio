@@ -9,16 +9,32 @@
 html,
 body,
 #root,
-.appContainer {
+.MainContainer,
+.AppContainer {
   height: 100%;
 }
 
-.homeContainer {
+.MainContainer {
+  width: 100%;
+}
+
+.AppContainer {
+  display: flex;
+}
+
+.HomeContainer{
   height: 100%;
   display: flex;
 }
 
-.sideBar {
+.ParallaxContainer {
+  position: relative !important;
+}
+
+.Parallax {
+  position: relative !important;
+}
+.SideBar {
   flex-basis: 20%;
   display: flex;
   flex-direction: column;
@@ -27,7 +43,7 @@ body,
   background-color: #111418;
 }
 
-.landingPage {
+.LandingPage {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -37,14 +53,17 @@ body,
   color: #fff;
   opacity: 1;
 }
+.LandingPage > * {
+  margin: 0.5em;
+}
 
-.profilePic {
+.ProfilePic {
   height: 200px;
   border-radius: 100px;
   margin: 1.5em;
 }
 
-.navContainer {
+.NavContainer {
   justify-self: flex-start;
   flex: 1;
   display: flex;
@@ -53,32 +72,73 @@ body,
   list-style-type: none;
 }
 
-.navItem {
+.NavItem {
   color: #ffffff;
+  font-size: 1.4em;
+  cursor: pointer;
 }
 
-.landingPage::before {
+.NavItem:hover {
+  color: #20c997;
+}
+
+.NavItem:active {
+  color: #20c997;
+}
+
+.LandingPage::before {
   content: '';
   background-image: url('https://res.cloudinary.com/dm4rue7fk/image/upload/v1673872169/yonatan_ozuwpw.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.75;
   position: absolute;
-  width: 80%;
+  width: 100%;
   height: 100%;
   background-position: center;
+  filter: brightness(0.5);
+  z-index: -10;
 }
 
-.typeAnimation {
+.TypeAnimation {
   color: #fff;
   opacity: 1;
-  font-size: 1.2em;
+  font-size: 1.6em;
   z-index: 99;
   font-weight: 600;
 }
 
-.welcome {
-  font-size: .8em;
+.Welcome {
+  font-size: 0.8em;
   font-weight: 500;
   z-index: 99;
+}
+
+.HireBtn {
+  border: 2px solid #20c997;
+  color: #20c997;
+  font-weight: 600;
+  font-size: 0.4em;
+  padding: 0.8rem 2.6rem;
+  border-radius: 50rem !important;
+  transition: all 0.5s ease;
+  z-index: 3;
+  background-color: transparent;
+  margin-top: 2em;
+}
+
+.HireBtn:hover {
+  background-color: #20c997;
+  border-color: #20c997;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.BasedIn {
+  color: #fff;
+  z-index: 10;
+  font-size: 0.6em;
+  font-weight: 400;
 }
