@@ -10,19 +10,21 @@ html,
 body,
 #root,
 .MainContainer,
-.AppContainer {
+.AppContainer,
+.AboutContainer {
   height: 100%;
 }
 
 .MainContainer {
   width: 100%;
+  background-color: rgb(60, 60, 60);
 }
 
 .AppContainer {
   display: flex;
 }
 
-.HomeContainer{
+.HomeContainer {
   height: 100%;
   display: flex;
 }
@@ -31,9 +33,6 @@ body,
   position: relative !important;
 }
 
-.Parallax {
-  position: relative !important;
-}
 .SideBar {
   flex-basis: 20%;
   display: flex;
@@ -141,4 +140,186 @@ body,
   z-index: 10;
   font-size: 0.6em;
   font-weight: 400;
+}
+
+.About {
+  background-color: #212529;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+ .AboutContainer, .ResumeContainer {
+  background-color: #212529;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.Titles {
+  position: relative;
+}
+
+.BackgroundTitle {
+  font-size: 6em;
+  position: relative;
+  color: hsl(218, 9%, 18%);
+}
+
+.FrontalTitle {
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.FrontalTitle::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: -2px;
+  left: 25%;
+  border-bottom: 2px solid #20c997;
+}
+
+.AboutInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Summary {
+  margin: 2em;
+  /* flex: 1; */
+}
+
+.Summary > h2 {
+  color: #fff;
+  font-size: 1.6em;
+}
+
+.Summary > p {
+  font-size: 1em;
+  margin: 1em 0;
+  color: hsla(0, 0%, 100%, 0.5) !important;
+}
+
+.AboutInfo > p,
+.AboutInfo {
+  line-height: 28.8px;
+  color: #90928e;
+  font-size: 1em;
+}
+
+.InfoTableContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.InfoTableContainer > button {
+  width: 50%;
+  background-color: #20c997;
+  border-color: #20c997;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+  border-width: 2px;
+  font-weight: 500;
+  padding: 0.8rem 2.6rem;
+  transition: all 0.5s ease;
+  border-radius: 50rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.InfoTableContainer > button:hover {
+  cursor: pointer;
+  background-color: #1baa80;
+}
+
+.InfoTableContainer a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.name {
+  color: #20c997;
+}
+
+.InfoTable {
+  list-style: none;
+}
+
+.InfoTable > li {
+  margin: 0.5em 0;
+}
+
+.InfoTable .key {
+  font-weight: 600;
+  margin-right: 0.5em;
+  color: #dee3e4;
+  font-size: 1em;
+}
+
+.InfoTable span:not(.key) {
+  font-weight: 400;
+  margin-right: 0.5em;
+  color: #dee3e4;
+  font-size: 1em;
+}
+
+
+.Info {
+  display: block;
+  color: #20c997 !important
+}
+
+.countryImg, iframe {
+  height: 250px;
+  width: 300px;
+}
+
+.mapsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 1em 0
+}
+
+.mapsContainer > svg {
+  width: 4em;
+  height: 4em;
+  color: #1baa80;
+  font-weight: 700;
+}
+
+.mapsContainer > svg:hover {
+  cursor: pointer;
+}
+
+
+.city {
+  font-weight: 400;
+  margin: 8px;
+}
+
+
+.placesLived {
+  font-size: 1.7em;
+}
+
+
+.CvInfo {
+  display: flex;
+  flex: 1;
 }

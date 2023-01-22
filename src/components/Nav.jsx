@@ -26,7 +26,7 @@ const Nav = ({ parallax }) => {
   return (
     <ul className='NavContainer'>
       {NavItems.map((item) => (
-        <li className='NavItem' id={item} style={{ color: selected === item ? '#20c997' : '#fff' }} onClick={handleScroll}>
+        <li className='NavItem' key={item} id={item} style={{ color: selected === item ? '#20c997' : '#fff' }} onClick={handleScroll}>
           {item.charAt(0).toUpperCase() + item.slice(1)}
         </li>
       ))}

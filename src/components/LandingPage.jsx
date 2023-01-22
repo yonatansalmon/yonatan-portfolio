@@ -14,7 +14,7 @@ const LandingPage = ({ parallax }) => {
         repeat={Infinity}
       />
       <h1 className='BasedIn'>Based in Tel Aviv</h1>
-      <button class='HireBtn' onClick={() => parallax.current.scrollTo(3)}>
+      <button className='HireBtn' onClick={() => parallax.current.scrollTo(3)}>
         Hire Me
       </button>
     </div>
