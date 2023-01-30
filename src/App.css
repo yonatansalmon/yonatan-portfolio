@@ -182,6 +182,7 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
 }
 
 .FrontalTitle::before {
@@ -325,6 +326,8 @@ iframe {
   color: #fff;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .CvTitle {
@@ -423,4 +426,38 @@ iframe {
 .DownloadCvBtn:hover > a {
 color: #fff
   
+}
+
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: #dee3e4!important
+
+}
+
+.contactContainer .BackgroundTitle {
+  color: #6c757d!important;
+  opacity: .1;
+
+}
+
+.ContactInfoContainer {
+  display: flex;
+  flex: 1;
+}
+
+.ContactInfo, .ContactForm {
+  margin: 1rem;
+}
+
+.ContactInfo {
+  color: #dee3e4!important
+}
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
 }
