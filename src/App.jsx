@@ -16,16 +16,16 @@ function App() {
       <SideBar parallax={parallax} />
       <div className="MainContainer">
         <Parallax ref={parallax} pages={4} className="ParallaxContainer">
-          <ParallaxLayer offset={0} speed={0.8} factor={1} className="Parallax-1">
+          <ParallaxLayer offset={0} speed={0} factor={1} className="Parallax-1">
             <Home parallax={parallax} />
           </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={0.8} factor={1} className="Parallax-2">
+          <ParallaxLayer offset={1} speed={0.1} factor={1} className="Parallax-2">
             <About />
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.8} factor={1} className="Parallax">
+          <ParallaxLayer offset={2} speed={0.1} factor={1} className="Parallax">
             <Resume />
           </ParallaxLayer>
-          <ParallaxLayer offset={3} speed={0.8} factor={1} className="Parallax">
+          <ParallaxLayer offset={3} speed={.1} factor={1} className="Parallax">
             <Contact />
           </ParallaxLayer>
         </Parallax>
