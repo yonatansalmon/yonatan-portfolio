@@ -1,37 +1,46 @@
-import { createRef, useRef } from "react";
-import "./App.css";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
-import SideBar from "./components/SideBar.jsx";
+import { createRef, useRef } from 'react';
+import './App.css';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import SideBar from './components/SideBar.jsx';
 
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import Resume from "./pages/Resume";
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Resume from './pages/Resume';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider, Route, Link } from 'react-router-dom';
+import Nav from './components/Nav';
+import { Root } from './components/Root';
 
 function App() {
   const parallax = useRef(null);
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Root />,
+      children: [
+        {
+          path: '/',
+          element: <Home />,
+        },
+        {
+          path: 'about',
+          element: <About />,
+        },
+        {
+          path: 'resume',
+          element: <Resume />,
+        },
+        {
+          path: 'contact',
+          element: <Contact />,
+        },
+      ],
+    },
+  ]);
 
-  return (
-    <div className="AppContainer">
-      <SideBar parallax={parallax} />
-      <div className="MainContainer">
-        <Parallax ref={parallax} pages={4} className="ParallaxContainer">
-          <ParallaxLayer offset={0} speed={0} factor={1} className="Parallax-1">
-            <Home parallax={parallax} />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1} speed={0.1} factor={1} className="Parallax-2">
-            <About />
-          </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={0.1} factor={1} className="Parallax">
-            <Resume />
-          </ParallaxLayer>
-          <ParallaxLayer offset={3} speed={.1} factor={1} className="Parallax">
-            <Contact />
-          </ParallaxLayer>
-        </Parallax>
-      </div>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

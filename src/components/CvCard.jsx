@@ -1,13 +1,13 @@
 import React from "react";
 import '../App.css'
 
-const CvCard = () => {
+const CvCard = ({cvEl}) => {
   return (
     <div className="CvCardContainer">
-      <p className="Badge">2000 - 2014</p>
-      <h3 className="CardTitle">Computer Science</h3>
-      <p className="CardPlace">International University</p>
-      <p className="CardDescription">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
+      <p className="Badge">{cvEl?.startYear} - {cvEl?.endYear}</p>
+      <h3 className="CardTitle">{cvEl?.subject}</h3>
+      <p className="CardPlace">{cvEl?.location}</p>
+      <p className="CardDescription">{cvEl?.description}</p>
     </div>
   );
 };

@@ -10,12 +10,18 @@ html {
   font-size: 62.5%;
 }
 
-html,
+/* html,
 body,
-#root,
-.MainContainer,
-.AppContainer {
+#root {
   height: 100%;
+} */
+
+#root {
+  display: flex;
+}
+
+.AppContainer {
+  display: flex;
 }
 
 .MainContainer {
@@ -23,12 +29,9 @@ body,
   background-color: #343a40 !important;
 }
 
-.AppContainer {
-  display: flex;
-}
-
 .HomeContainer {
   display: flex;
+  min-height: 100vh;
 }
 
 .ParallaxContainer {
@@ -36,7 +39,7 @@ body,
 }
 
 .SideBar {
-  flex-basis: 20%;
+  flex-basis: 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +56,7 @@ body,
   font-size: 40px;
   color: #fff;
   opacity: 1;
+  position: relative;
 }
 .LandingPage > * {
   margin: 0.5rem;
@@ -66,21 +70,23 @@ body,
 
 .NavContainer {
   justify-self: flex-start;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   list-style-type: none;
+  align-items: center;
+  flex: 1;
 }
 
 .NavItem {
   color: #ffffff;
   font-size: 2.4rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .NavItem:hover {
-  color: #20c997;
+  color: #20c997 !important;
 }
 
 .NavItem:active {
@@ -89,7 +95,7 @@ body,
 
 .LandingPage::before {
   content: '';
-  background-image: url('https://res.cloudinary.com/dm4rue7fk/image/upload/v1673872169/yonatan_ozuwpw.jpg');
+  background-image: url('./images/yonatan-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.75;
@@ -236,7 +242,7 @@ body,
   box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
   border-width: 2px;
   font-weight: 500;
-  padding: 1.5rem 6rem;
+  padding: 0.5rem 2rem;
   transition: all 0.5s ease;
   border-radius: 50rem !important;
   display: flex;
@@ -339,6 +345,7 @@ iframe {
 .CvInfo {
   display: flex;
   flex: 1;
+  margin: 1.3rem;
 }
 
 .EducationContainer,
@@ -361,8 +368,15 @@ iframe {
 .Badge {
   background-color: #20c997;
   align-self: flex-start;
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 1.2rem;
   border-radius: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.CardTitle,
+.CardPlace,
+.CardDescription {
+  margin-left: 0.5rem;
 }
 
 .CardTitle {
@@ -441,9 +455,9 @@ iframe {
   flex-direction: column;
   align-items: center;
   color: #dee3e4 !important;
-  background-color: #212529 !important; 
+  background-color: #212529 !important;
+  min-height: 100vh;
 }
-  
 
 .contactContainer .BackgroundTitle {
   color: #6c757d !important;
@@ -454,8 +468,6 @@ iframe {
   display: flex;
   flex: 1;
   align-items: center;
-  align-self: stretch;
-  margin: 0 8rem;
 }
 
 .ContactInfo,
@@ -466,13 +478,11 @@ iframe {
 .ContactInfo {
   color: #dee3e4 !important;
   font-size: 2rem;
-  flex: 1;
 }
 
 .ContactForm {
   display: flex;
   flex-direction: column;
-  flex: 2;
 }
 
 .ContactForm > h4 {
@@ -481,12 +491,12 @@ iframe {
   font-weight: 300;
 }
 
-
 .contactContainer,
 .HomeContainer,
-.AboutContainer
- {
+.AboutContainer,
+.ResumeContainer {
   height: 100%;
+  flex: 1;
 }
 
 .FormInput {
@@ -497,7 +507,7 @@ iframe {
   padding: 0.81rem 0.96rem;
   border: none;
   border-radius: 0.375rem;
-  margin: 1rem
+  margin: 1rem;
 }
 
 .FormInput::placeholder {
@@ -520,14 +530,12 @@ iframe {
   align-self: center;
 }
 
-
 .NameEmailContainer {
   display: flex;
 }
 
-
 .NameEmailContainer > input {
-flex: 1;
+  flex: 1;
 }
 
 .ContactForm textarea {
@@ -537,14 +545,14 @@ flex: 1;
 .ContactDetails {
   display: flex;
   align-items: center;
-  margin: 2rem 0
+  margin: 2rem 0;
 }
 .Icon {
   height: 2rem;
-  fill: #20c997!important;
-  margin-right: 1.2rem !important
+  fill: #20c997 !important;
+  margin-right: 1.2rem !important;
 }
 
 .FollowMe {
-  margin: 3rem 0 1rem 0
+  margin: 3rem 0 1rem 0;
 }
