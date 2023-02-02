@@ -72,9 +72,9 @@ body,
   justify-self: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   list-style-type: none;
-  align-items: center;
+  align-items: flex-start;
   flex: 1;
 }
 
@@ -83,6 +83,7 @@ body,
   font-size: 2.4rem;
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 1.6rem;
 }
 
 .NavItem:hover {
@@ -216,7 +217,7 @@ body,
 }
 
 .Summary > p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 1em 0;
   color: hsla(0, 0%, 100%, 0.5) !important;
 }
@@ -272,20 +273,21 @@ body,
 .InfoTable > li {
   margin: 0.5em 0;
   text-align: center;
+  display: flex;
 }
 
 .InfoTable .key {
   font-weight: 600;
   margin-right: 0.5rem;
   color: #dee3e4;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .InfoTable span:not(.key) {
   font-weight: 400;
   margin-right: 0.5rem;
   color: #dee3e4;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .Info {
@@ -416,12 +418,14 @@ iframe {
   background-color: #111418 !important;
   margin-top: 0.6rem;
   border-radius: 12px;
+  border: 0.5px solid #20c997;
 }
 
 .Bar {
   background-color: #20c997;
   border-radius: 12px;
   width: 50%;
+  height: 100%;
 }
 
 .DownloadCvBtn {
@@ -500,7 +504,7 @@ iframe {
 }
 
 .FormInput {
-  background: #232a31;
+  background: #303b45;
   border-color: #232a31;
   color: #fff;
   height: inherit;

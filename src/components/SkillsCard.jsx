@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css";
 
-const SkillsCard = () => {
+const SkillsCard = ({skill}) => {
   return (
       <div className="SkillNameContainer">
-        <span className="SkillName">Web Design</span>
+        <span className="SkillName">{skill.name}</span>
         <div className="BarContainer">
-          <div className="Bar"></div>
+          <div className="Bar" style={{width: `${skill.percent}%`}}></div>
         </div>
     </div>
   );

@@ -65,7 +65,7 @@ const experience = [
     endYear: 'Present',
     subject: 'Full Stack Lecturer',
     location: 'Israel Tech Challenge (ITC)',
-    description: 'Teach and give lectures on the following technologies: React, JavaScript, Node, HTML/CSS, MongoDB and Git in a coding bootcamp',
+    description: 'Teach and give lectures on: React, JavaScript, Node.js, HTML/CSS, MongoDB and Git in a coding bootcamp',
   },
   {
     startYear: '2020',
@@ -83,6 +83,15 @@ const experience = [
   },
 ];
 
-const skills = [{ name: '', percent: '' }];
+const skills = [
+  { name: 'React', percent: 85 },
+  { name: 'JavaScript', percent: 85 },
+  { name: 'Node.js', percent: 80 },
+  { name: 'MongoDB', percent: 80 },
+  { name: 'HTML/CSS', percent: 85 },
+  { name: 'Git', percent: 85 },
+  { name: 'SQL', percent: 65 },
+  { name: 'TypeScript', percent: 75 },
+];
 
-export { maps, education, experience };
+export { maps, education, experience, skills };
