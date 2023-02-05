@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
 import { TfiArrowRight, TfiArrowLeft } from 'react-icons/tfi';
-import { maps } from '../data/data';
+import { maps } from '../data/Data';
 
 let idx = 0;
 

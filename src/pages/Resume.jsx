@@ -4,7 +4,7 @@ import Title from '../components/Title';
 import '../App.css';
 import SkillsCard from '../components/SkillsCard';
 import pdf from '../pdf/yonatansalmon_cv.pdf';
-import { experience, education, skills } from '../data/data';
+import { experience, education, skills } from '../data/Data';
 
 console.log(education);
 
