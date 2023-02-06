@@ -20,10 +20,9 @@ body,
   display: flex;
 }
 
-#root  {
+#root {
   flex: 1;
 }
-
 
 .AppContainer {
   display: flex;
@@ -46,7 +45,7 @@ body,
 
 .Parallax {
   display: flex;
-  flex-direction: column !important; 
+  flex-direction: column !important;
 }
 
 .SideBar {
@@ -563,23 +562,22 @@ iframe {
 }
 
 .IconContainer {
-  margin-left: .5rem
+  margin-left: 0.5rem;
 }
 
 .IconContainer > svg {
   height: 3rem;
 }
 
-.LinkIcon  {
+.LinkIcon {
   height: 3rem;
-  display: inline-block
+  display: inline-block;
 }
 
-.LinkIcon > .Icon  {
+.LinkIcon > .Icon {
   height: 3rem;
-  display: inline-block
+  display: inline-block;
 }
-
 
 .IconContainer > svg:hover {
   cursor: pointer;
@@ -595,12 +593,20 @@ iframe {
   margin: 3rem 0 1rem 0;
 }
 
-
 .SendMsgBtn {
   padding: 1.5rem 2rem !important;
 }
 
-
 .SendMsgBtn:hover {
-  cursor: pointer
+  cursor: pointer;
+}
+
+.Toast {
+  font-size: 1.4rem;
+}
+
+.ErrorMessage {
+  display: flex;
+  align-items: center;
+  color: red;
 }
