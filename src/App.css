@@ -620,6 +620,13 @@ iframe {
   html {
     font-size: 50%;
   }
+  .contactContainer,
+.HomeContainer,
+.AboutContainer,
+.ResumeContainer {
+  position: relative;
+  top: 60px
+}
 
   #root {
     display: block;
@@ -711,6 +718,9 @@ iframe {
   .NameEmailContainer  {
     flex-direction: column;
   }
+  .Summary {
+    margin: 3rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -718,7 +728,7 @@ iframe {
     font-size: 60%;
   }
   .NavContainer a {
-      font-size: 1.2rem;
+      font-size: 2rem;
   }
 
   .ContactInfoContainer {
@@ -726,7 +736,6 @@ iframe {
   }
   .ContactInfo {
     position: relative;
-    left: 25%;
     margin: 2rem 0 5rem 0;
   }
 
@@ -743,5 +752,23 @@ iframe {
   }
   .Badge {
     padding: .4rem 3.2rem;
+  }
+
+  .contactContainer {
+    flex: 1;
+  }
+
+  .ContactForm {
+    justify-content: flex-start;
+    align-self: stretch;
+  }
+
+  .ContactInfoContainer {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .FollowMe, .IconContainer {
+    text-align: center;
   }
 }
