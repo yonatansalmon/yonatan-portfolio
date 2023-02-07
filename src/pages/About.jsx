@@ -15,8 +15,10 @@ const About = () => {
             <h2>
               I'm <span className="name">Yonatan Salmon</span>, a Full-Stack Developer
             </h2>
-            <p>I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <p>Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.</p>
+            <p>I have a passion for continuously advancing my skills and knowledge in the field.</p>
+            <p>With over two years of experience in developing cutting-edge websites and applications, I am eager to take on new challenges and contribute to the growth and success of a company</p>
+            <p> I am well-versed in various technologies, including React, JavaScript, Node, HTML/CSS, MongoDB and Git. In addition, he has a strong track record as a lecturer and mentor, having received high student satisfaction scores for his engaging and comprehensive teaching style. </p>
+            <p>I am a quick learner, highly organized, and always ready to tackle new projects with enthusiasm.</p>
           </div>
           <div className="InfoTableContainer">
             <ul className="InfoTable">
