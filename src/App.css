@@ -749,10 +749,12 @@ iframe {
 
   .mapsContainer #prev {
     left: 5%;
+    stroke-width: 4px;
   }
 
   .mapsContainer #next {
     right: 5%;
+    stroke-width: 4px;
   }
   .Badge {
     padding: 0.4rem 5.2rem;
