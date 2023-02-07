@@ -23,11 +23,11 @@ const Contact = (props) => {
             </div>
             <div className='ContactDetails'>
               <PhoneIcon className='Icon' />
-              142141241
+              052-9533170
             </div>
             <div className='ContactDetails'>
               <EmailIcon className='Icon' />
-              yonatansalmon_@gmail.com
+              yonatansalmon@gmail.com
             </div>
             <h4 className='FollowMe'>Follow Me</h4>
             <div className='IconContainer'>
