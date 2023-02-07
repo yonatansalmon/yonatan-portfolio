@@ -734,4 +734,7 @@ iframe {
   .mapsContainer #next {
     right: 5%
   }
+  .Badge {
+    padding: .4rem 3.2rem;
+  }
 }
