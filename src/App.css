@@ -790,4 +790,7 @@ iframe {
   #home {
     display: none;
   }
+  .SendMsgBtn {
+    margin-bottom: 3rem;
+  }
 }
