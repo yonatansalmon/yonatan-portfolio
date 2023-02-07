@@ -34,7 +34,7 @@ const Contact = (props) => {
               <a className='LinkIcon' rel='noreferrer' href='https://www.linkedin.com/in/yonatansalmon' target='_blank'>
                 <LinkedinIcon className='Icon' />
               </a>
-              <a className='LinkIcon' rel='noreferrer' href='https://www.linkedin.com/in/yonatansalmon' target='_blank'>
+              <a className='LinkIcon' rel='noreferrer' href='https://github.com/yonatansalmon' target='_blank'>
                 <GithubIcon className='Icon' />
               </a>
             </div>
