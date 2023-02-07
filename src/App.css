@@ -78,6 +78,10 @@ body,
   margin: 1.5rem;
 }
 
+.ProfilePic:hover {
+  cursor: pointer;
+}
+
 .NavContainer {
   justify-self: flex-start;
   display: flex;
@@ -621,12 +625,12 @@ iframe {
     font-size: 50%;
   }
   .contactContainer,
-.HomeContainer,
-.AboutContainer,
-.ResumeContainer {
-  position: relative;
-  top: 60px
-}
+  .HomeContainer,
+  .AboutContainer,
+  .ResumeContainer {
+    position: relative;
+    top: 60px;
+  }
 
   #root {
     display: block;
@@ -715,7 +719,7 @@ iframe {
     flex-direction: column;
     justify-content: center;
   }
-  .NameEmailContainer  {
+  .NameEmailContainer {
     flex-direction: column;
   }
   .Summary {
@@ -728,7 +732,7 @@ iframe {
     font-size: 60%;
   }
   .NavContainer a {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .ContactInfoContainer {
@@ -744,14 +748,14 @@ iframe {
   }
 
   .mapsContainer #prev {
-    left: 5%
+    left: 5%;
   }
 
   .mapsContainer #next {
-    right: 5%
+    right: 5%;
   }
   .Badge {
-    padding: .4rem 3.2rem;
+    padding: 0.4rem 5.2rem;
   }
 
   .contactContainer {
@@ -768,7 +772,20 @@ iframe {
     align-items: center;
     margin-top: 0;
   }
-  .FollowMe, .IconContainer {
+  .FollowMe,
+  .IconContainer {
     text-align: center;
+  }
+
+  .BackgroundTitle {
+    font-size: 8rem;
+  }
+
+  .FrontalTitle {
+    font-size: 4rem;
+  }
+
+  #home {
+    display: none;
   }
 }
