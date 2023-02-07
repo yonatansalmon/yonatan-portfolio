@@ -17,7 +17,7 @@ const About = () => {
             </h2>
             <p>I have a passion for continuously advancing my skills and knowledge in the field.</p>
             <p>With over two years of experience in developing cutting-edge websites and applications, I am eager to take on new challenges and contribute to the growth and success of a company</p>
-            <p> I am well-versed in various technologies, including React, JavaScript, Node, HTML/CSS, MongoDB and Git. In addition, he has a strong track record as a lecturer and mentor, having received high student satisfaction scores for his engaging and comprehensive teaching style. </p>
+            <p> I am well-versed in various technologies, including React, JavaScript, Node, HTML/CSS, MongoDB and Git. In addition, I have a strong track record as a lecturer and mentor, having received high student satisfaction scores for my engaging and comprehensive teaching style. </p>
             <p>I am a quick learner, highly organized, and always ready to tackle new projects with enthusiasm.</p>
           </div>
           <div className="InfoTableContainer">
