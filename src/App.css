@@ -181,6 +181,9 @@ body,
 
 .Titles {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .BackgroundTitle {
@@ -197,7 +200,7 @@ body,
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  width: 100%;
+  width: 75%;
 }
 
 .FrontalTitle::before {
@@ -480,8 +483,7 @@ iframe {
 
 .ContactInfoContainer {
   display: flex;
-  flex: 1;
-  align-items: center;
+  width: 100%;
 }
 
 .ContactInfo,
@@ -491,7 +493,7 @@ iframe {
 
 .ContactInfo {
   color: #dee3e4 !important;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .ContactForm {
@@ -609,4 +611,127 @@ iframe {
   display: flex;
   align-items: center;
   color: red;
+}
+
+@media (max-width: 940px) {
+  html {
+    font-size: 50%;
+  }
+
+  #root {
+    display: block;
+  }
+
+  .SideBar {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .NavContainer {
+    flex-direction: row;
+    flex: 0;
+  }
+  .NavItem {
+    margin: 2rem;
+  }
+
+  .ProfilePic {
+    height: 6rem;
+  }
+  .AboutInfo {
+    flex-direction: column-reverse;
+  }
+
+  .InfoTableContainer {
+    margin-bottom: 4rem;
+  }
+
+  .InfoTable li span {
+    font-size: 2rem !important;
+  }
+  .InfoTableContainer > button {
+    width: 85%;
+  }
+
+  .mapsContainer {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .placesLived {
+    font-size: 2.5rem !important;
+  }
+
+  .mapsContainer #prev {
+    position: absolute;
+    left: 10%;
+  }
+
+  .mapsContainer #next {
+    position: absolute;
+    right: 10%;
+  }
+  .CvInfo {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .SkillsCardContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .EducationContainer,
+  .ExperienceContainer {
+    margin-bottom: 5rem;
+  }
+
+  .ContactForm {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .ContactForm h4 {
+    text-align: center;
+  }
+
+  .ContactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .NameEmailContainer  {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .LandingPage > div {
+    font-size: 70%;
+  }
+  .NavContainer a {
+      font-size: 2rem;
+  }
+
+  .ContactInfoContainer {
+    flex-direction: column;
+  }
+  .ContactInfo {
+    position: relative;
+    left: 25%;
+    margin: 2rem 0 5rem 0;
+  }
+
+  .Summary h2 {
+    font-size: 2.2rem;
+  }
+
+  .mapsContainer #prev {
+    left: 5%
+  }
+
+  .mapsContainer #next {
+    right: 5%
+  }
 }
