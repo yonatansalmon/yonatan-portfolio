@@ -92,6 +92,10 @@ body,
   flex: 1;
 }
 
+.HireButtons > a {
+  margin: 3rem;
+}
+
 .NavItem {
   color: #ffffff;
   font-size: 2.4rem;
@@ -141,12 +145,13 @@ body,
   color: #20c997;
   font-weight: 600;
   font-size: 2rem;
-  padding: 1.5rem 2.6rem;
+  padding: 1.3rem 2rem;
   border-radius: 50rem !important;
   transition: all 0.5s ease;
   z-index: 3;
   background-color: transparent;
   margin-top: 2rem;
+  text-decoration: none;
 }
 
 .HireBtn:hover {
@@ -792,5 +797,14 @@ iframe {
   }
   .SendMsgBtn {
     margin-bottom: 3rem;
+  }
+
+  .HireButtons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .HireButtons > a {
+text-align: center;
   }
 }
