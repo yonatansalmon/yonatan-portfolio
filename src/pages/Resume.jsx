@@ -13,17 +13,17 @@ const Resume = () => {
     <section className='ResumeContainer'>
       <Title backgroundTitle='Summary' frontalTitle='Resume' />
       <div className='CvInfo'>
+      <div className='ExperienceContainer'>
+          <h1 className='CvTitle'>My Experience</h1>
+          {experience.map((cvEl) => (
+            <CvCard cvEl={cvEl} />
+          ))}{' '}
+        </div>
         <div className='EducationContainer'>
           <h1 className='CvTitle'>My Education</h1>
           {education.map((cvEl) => (
             <CvCard cvEl={cvEl} />
           ))}
-        </div>
-        <div className='ExperienceContainer'>
-          <h1 className='CvTitle'>My Experience</h1>
-          {experience.map((cvEl) => (
-            <CvCard cvEl={cvEl} />
-          ))}{' '}
         </div>
       </div>
       <div className='SkillsContainer'>
