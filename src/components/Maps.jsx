@@ -9,7 +9,6 @@ const Maps = () => {
   const [currentPlace, setCurrentPlace] = useState(maps[idx]);
 
   const handleChangeMap = (e) => {
-    console.log(idx);
     if (e.target.id === 'next') {
       idx++;
     } else {

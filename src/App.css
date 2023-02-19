@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   flex-basis: 100%;
@@ -22,6 +23,7 @@ body,
 
 #root {
   flex: 1;
+  background-color: #3a3a3a;
 }
 
 .AppContainer {
@@ -37,6 +39,7 @@ body,
 .HomeContainer {
   display: flex;
   min-height: 100vh;
+  margin-top: 0 !important;
 }
 
 .ParallaxContainer {
@@ -73,7 +76,7 @@ body,
 }
 
 .ProfilePic {
-  height: 150px;
+  height: 10rem;
   border-radius: 100px;
   margin: 1.5rem;
 }
@@ -85,11 +88,15 @@ body,
 .NavContainer {
   justify-self: flex-start;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   list-style-type: none;
-  align-items: flex-start;
+  align-items: center;
   flex: 1;
+  background-color: #111418;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .HireButtons > a {
@@ -97,7 +104,7 @@ body,
 }
 
 .NavItem {
-  color: #ffffff;
+  color: #fff !important;
   font-size: 2.4rem;
   cursor: pointer;
   text-decoration: none;
@@ -123,9 +130,11 @@ body,
   height: 100%;
   background-position: center;
   filter: brightness(0.5);
-  z-index: -10;
+  z-index: 0;
 }
-
+.HireButtons {
+  z-index: 2;
+}
 .TypeAnimation {
   color: #fff;
   opacity: 1;
@@ -383,6 +392,7 @@ iframe {
   flex-direction: column;
   margin: 1.2rem;
   padding: 1rem;
+  height: 21rem;
 }
 
 .CvCardContainer > * {
@@ -483,6 +493,7 @@ iframe {
   color: #dee3e4 !important;
   background-color: #212529 !important;
   min-height: 100vh;
+  margin-bottom: 0 !important;
 }
 
 .contactContainer .BackgroundTitle {
@@ -639,6 +650,9 @@ iframe {
 
   #root {
     display: block;
+  }
+  .CvCardContainer {
+    height:auto;
   }
 
   .SideBar {
@@ -805,6 +819,15 @@ iframe {
   }
 
   .HireButtons > a {
-text-align: center;
+    text-align: center;
   }
+}
+
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.main > section {
+  margin: 10rem 0;
 }

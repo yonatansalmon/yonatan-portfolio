@@ -6,11 +6,9 @@ import SkillsCard from '../components/SkillsCard';
 import pdf from '../pdf/yonatansalmon_cv.pdf';
 import { experience, education, skills } from '../data/Data';
 
-console.log(education);
-
-const Resume = () => {
+const Resume = ({resumeRef}) => {
   return (
-    <section className='ResumeContainer'>
+    <section className='ResumeContainer' ref={resumeRef} id='container'>
       <Title backgroundTitle='Summary' frontalTitle='Resume' />
       <div className='CvInfo'>
       <div className='ExperienceContainer'>

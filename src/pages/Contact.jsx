@@ -10,10 +10,10 @@ import { useState, useRef } from 'react';
 import '../App.css';
 import ContactForm from '../components/ContactForm';
 
-const Contact = (props) => {
+const Contact = ({contactRef}) => {
   return (
     <>
-      <section className='contactContainer'>
+      <section className='contactContainer' ref={contactRef}>
         <Title backgroundTitle='Contact' frontalTitle='Get In Touch' />
         <div className='ContactInfoContainer'>
           <div className='ContactInfo'>

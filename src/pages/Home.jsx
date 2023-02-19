@@ -3,12 +3,12 @@ import LandingPage from '../components/LandingPage';
 import SideBar from '../components/SideBar';
 import '../App.css';
 
-const Home = ({parallax}) => {
+const Home = ({homeRef, contactRef}) => {
   
 
   return (
-    <section className='HomeContainer'>
-      <LandingPage  parallax={parallax}/>
+    <section className='HomeContainer' ref={homeRef}>
+      <LandingPage contactRef={contactRef} />
     </section>
   );
 };

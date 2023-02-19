@@ -5,9 +5,9 @@ import "../App.css";
 import Maps from "../components/Maps";
 import Title from "../components/Title";
 
-const About = () => {
+const About = ({aboutRef}) => {
   return (
-    <section className="AboutContainer">
+    <section className="AboutContainer" ref={aboutRef}>
       <div className="About">
         <Title backgroundTitle="About Me" frontalTitle="Know Me More" />
         <div className="AboutInfo">

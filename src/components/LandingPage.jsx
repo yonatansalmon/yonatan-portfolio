@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 import { TypeAnimation } from 'react-type-animation';
-import { Link } from 'react-router-dom';
-import pdf from "../pdf/yonatansalmon_cv.pdf";
+import { Link, animateScroll as scroll } from 'react-scroll';
+import pdf from '../pdf/yonatansalmon_cv.pdf';
 
-const LandingPage = ({ parallax }) => {
+const LandingPage = ({ contactRef }) => {
+
   return (
     <div className='LandingPage'>
       <h4 className='Welcome'>Welcome</h4>
@@ -17,10 +18,10 @@ const LandingPage = ({ parallax }) => {
       />
       <h1 className='BasedIn'>Based in Tel Aviv</h1>
       <div className='HireButtons'>
-        <a className='HireBtn CV' download="yonatansalmon_cv.pdf" href={pdf}>
-         Download CV
+        <a className='HireBtn CV' download='yonatansalmon_cv.pdf' href={pdf}>
+          Download CV
         </a>
-        <Link className='HireBtn' to='contact'>
+        <Link className='HireBtn' onClick={() => contactRef.current.scrollIntoView({block: 'center'})}>
           Hire Me
         </Link>
       </div>
