@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import '../App.css';
 import ProfilePic from '../images/profilepic.png';
 
@@ -11,22 +12,38 @@ const Nav = ({ homeRef, aboutRef, resumeRef, contactRef }) => {
     { name: 'contact', ref: contactRef },
   ];
 
+  const handleNavClick = (item) => {
+    setSelected(item.name);
+    item.ref.current.scrollIntoView();
+    console.log(item.name);
+    console.log(selected);
+
+  };
+
+  useEffect(() => {
+    console.log(selected);
+  }, [selected]);
+
   return (
     <ul className='NavContainer'>
       <img className='ProfilePic' src={ProfilePic} alt='yonatan' onClick={() => homeRef.current.scrollIntoView()}></img>
 
-      {NavItems.map((item) => (
-        <li
-          className='NavItem'
-          key={item.name}
-          id={item.name}
-          style={{ color: selected === item ? '#20c997' : '#fff' }}
-          to={item.ref.current}
-          onClick={() => item.ref.current.scrollIntoView()}
-        >
-          {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
-        </li>
-      ))}
+      {NavItems.map((item) => {
+        console.log(selected === item.name)
+
+        return (
+          <li
+            className='NavItem'
+            key={item.name}
+            id={item.name}
+            style={{ color: selected === item.name ? '#20c997' : '#fff' }}
+            to={item.ref.current}
+            onClick={() => handleNavClick(item)}
+          >
+            {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
+          </li>
+        );
+      })}
     </ul>
   );
 };
