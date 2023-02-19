@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import '../App.css';
 import { TypeAnimation } from 'react-type-animation';
-import { Link, animateScroll as scroll } from 'react-scroll';
 import pdf from '../pdf/yonatansalmon_cv.pdf';
 
 const LandingPage = ({ contactRef }) => {
@@ -21,9 +20,9 @@ const LandingPage = ({ contactRef }) => {
         <a className='HireBtn CV' download='yonatansalmon_cv.pdf' href={pdf}>
           Download CV
         </a>
-        <Link className='HireBtn' onClick={() => contactRef.current.scrollIntoView({block: 'center'})}>
+        <span className='HireBtn' onClick={() => contactRef.current.scrollIntoView({block: 'center'})}>
           Hire Me
-        </Link>
+        </span>
       </div>
     </div>
   );

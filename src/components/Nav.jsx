@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
 import '../App.css';
 import ProfilePic from '../images/profilepic.png';
 
@@ -17,7 +16,7 @@ const Nav = ({ homeRef, aboutRef, resumeRef, contactRef }) => {
       <img className='ProfilePic' src={ProfilePic} alt='yonatan' onClick={() => homeRef.current.scrollIntoView()}></img>
 
       {NavItems.map((item) => (
-        <Link
+        <li
           className='NavItem'
           key={item.name}
           id={item.name}
@@ -26,7 +25,7 @@ const Nav = ({ homeRef, aboutRef, resumeRef, contactRef }) => {
           onClick={() => item.ref.current.scrollIntoView()}
         >
           {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
-        </Link>
+        </li>
       ))}
     </ul>
   );
