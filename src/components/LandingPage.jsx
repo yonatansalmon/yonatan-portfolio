@@ -20,7 +20,7 @@ const LandingPage = ({ contactRef }) => {
         <a className='HireBtn CV' download='yonatansalmon_cv.pdf' href={pdf}>
           Download CV
         </a>
-        <span className='HireBtn' onClick={() => contactRef.current.scrollIntoView({block: 'center'})}>
+        <span className='HireBtn HireMe' id='HireMe' onClick={() => contactRef.current.scrollIntoView({block: 'center'})}>
           Hire Me
         </span>
       </div>
