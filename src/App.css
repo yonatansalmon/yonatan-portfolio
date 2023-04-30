@@ -124,12 +124,12 @@ body,
   background-image: url('./images/yonatan-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.75;
+  opacity: 0.85;
   position: absolute;
   width: 100%;
   height: 100%;
   background-position: center;
-  filter: brightness(0.7);
+  filter: brightness(0.6);
   z-index: 0;
   background-position-y: 40%;
 }
