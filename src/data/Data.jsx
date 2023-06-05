@@ -48,7 +48,7 @@ const education = [
     endYear: '2019',
     subject: 'BA Psychology',
     location: 'Reichman University (IDC)',
-    description: "Was in the Dean's List, participated in an Honors research program",
+    description: "Dean's List for 3 years; graduated with honors",
   },
   {
     startYear: '2011',
@@ -65,14 +65,14 @@ const experience = [
     endYear: 'Present',
     subject: 'Full Stack Lecturer',
     location: 'Israel Tech Challenge (ITC)',
-    description: 'Teach and give lectures on: React, JavaScript, Node.js, HTML/CSS, MongoDB and Git in a coding bootcamp',
+    description: 'Teach React, JavaScript, Node.js, HTML/CSS, MongoDB and Git to an average of 50 students',
   },
   {
     startYear: '2020',
     endYear: '2021',
     subject: 'Front End Developer',
     location: 'Zoomin Software',
-    description: 'Develop websites from concept to deployment using React',
+    description: 'Built, deployed and optimized high-traffic websitesusing React, resulting in a 40% increase in user engagement',
   },
   {
     startYear: '2020',
