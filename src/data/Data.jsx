@@ -41,14 +41,14 @@ const education = [
     subject: 'Coding Bootcamp',
     location: 'Israel Tech Challenge (ITC)',
     description:
-      'Full-time, five-months training course in full-stack development; focus on research and self-learning while using the industry’s leading trends',
+      'Full-time, five-months training course in full-stack development; focus on research and self-learning while using the industry’s leading trends.',
   },
   {
     startYear: '2016',
     endYear: '2019',
     subject: 'BA Psychology',
     location: 'Reichman University (IDC)',
-    description: "Dean's List for 3 years; graduated with honors",
+    description: "Graduated with Dean's List honors, maintaining an average of 97.",
   },
   {
     startYear: '2011',
@@ -65,21 +65,21 @@ const experience = [
     endYear: 'Present',
     subject: 'Full Stack Lecturer',
     location: 'Israel Tech Challenge (ITC)',
-    description: 'Teach React, JavaScript, Node.js, HTML/CSS, MongoDB and Git to an average of 50 students',
+    description: 'Lecture, teach and mentor juniors on Full Stack development through live coding sessions, covering topics such as React, JavaScript, Node.js, HTML/CSS, OOP and Git.',
   },
   {
     startYear: '2020',
     endYear: '2021',
     subject: 'Front End Developer',
     location: 'Zoomin Software',
-    description: 'Built, deployed and optimized high-traffic websitesusing React, resulting in a 40% increase in user engagement',
+    description: 'Built, deployed and optimized high-traffic websites using React, increasing user engagement by 10%. Specialized in Web Development, utilizing technologies such as HTML, CSS, JavaScript and React to create dynamic and responsive websites.',
   },
   {
     startYear: '2020',
     endYear: '2020',
     subject: 'Full Stack Developer',
     location: 'Kavanu',
-    description: 'Developed a server-side service and CRM for hair salon management',
+    description: 'Developed a CRM designed for video creation processes, using Python, Flask framework, React, RESTful APIs.',
   },
 ];
 
