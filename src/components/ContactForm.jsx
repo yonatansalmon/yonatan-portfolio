@@ -43,12 +43,13 @@ const ContactForm = () => {
         setError('Please enter a message for the email');
         return;
       }
-      const res = await emailjs.sendForm('service_pcizvve', 'template_5mfv9y4', form.current, 'kaO5fDd6_HAzMTs25');
+      const res = await emailjs.sendForm('service_giixmgq', 'template_5mfv9y4', form.current, 'kaO5fDd6_HAzMTs25');
       if (res.status === 200) {
         notify();
       }
     } catch (err) {
       console.log(err);
+      setError('Oops something went wrong')
     }
     setContactInfo({ name: '', email: '', body: '' });
   };
@@ -58,9 +59,9 @@ const ContactForm = () => {
       <div className='NameEmailContainer'>
         <input type='text' name='name' placeholder='Name' className='Name FormInput' onChange={handleFormInput} value={contactInfo.name} />
         <input type='text' name='email' placeholder='Email' onChange={handleFormInput} value={contactInfo.email} className='Email FormInput' />
-        {error && <h1 className='ErrorMessage'>{error}</h1>}
       </div>
       <textarea className='FormInput' name='body' onChange={handleFormInput} value={contactInfo.body} placeholder='Tell me more...'></textarea>
+      {error && <h1 className='ErrorMessage'>{error}</h1>}
       <button className='SendMsgBtn'>Send Message </button>
     </form>
   );

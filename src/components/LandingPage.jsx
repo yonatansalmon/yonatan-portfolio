@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../App.css';
 import { TypeAnimation } from 'react-type-animation';
-import pdf from '../pdf/yonatansalmon_cv.pdf';
+import pdf from '../pdf/cv_yonatan_salmon.pdf';
 
 const LandingPage = ({ contactRef }) => {
 
@@ -17,7 +17,7 @@ const LandingPage = ({ contactRef }) => {
       />
       <h1 className='BasedIn'>Based in Tel Aviv</h1>
       <div className='HireButtons'>
-        <a className='HireBtn CV' download='yonatansalmon_cv.pdf' href={pdf}>
+        <a className='HireBtn CV' download='cv_yonatan_salmon.pdf' href={pdf}>
           Download CV
         </a>
         <span className='HireBtn HireMe' id='HireMe' onClick={() => contactRef.current.scrollIntoView({block: 'center'})}>

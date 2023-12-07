@@ -63,16 +63,18 @@ const experience = [
   {
     startYear: '2021',
     endYear: 'Present',
-    subject: 'Full Stack Lecturer',
+    subject: 'Full Stack Developer and Teacher',
     location: 'Israel Tech Challenge (ITC)',
-    description: 'Lecture, teach and mentor juniors on Full Stack development through live coding sessions, covering topics such as React, JavaScript, Node.js, HTML/CSS, OOP and Git.',
+    description:
+      'Develop and maintain internal apps for the course infrastructure as well as teach juniors Full Stack development through live coding sessions.',
   },
   {
     startYear: '2020',
     endYear: '2021',
-    subject: 'Front End Developer',
+    subject: 'Full Stack Developer',
     location: 'Zoomin Software',
-    description: 'Built, deployed and optimized high-traffic websites using React, increasing user engagement by 10%. Specialized in Web Development, utilizing technologies such as HTML, CSS, JavaScript and React to create dynamic and responsive websites.',
+    description:
+      'Specialized in web development, utilizing HTML/CSS, React and Node.js to create dynamic and responsive websites. Developed, maintained, planned and optimized high-traffic websites, increasing user engagementby 10%.',
   },
   {
     startYear: '2020',

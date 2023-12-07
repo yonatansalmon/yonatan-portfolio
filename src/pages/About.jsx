@@ -1,5 +1,5 @@
 import React, { forwardRef, useState } from 'react';
-import pdf from '../pdf/yonatansalmon_cv.pdf';
+import pdf from '../pdf/cv_yonatan_salmon.pdf';
 
 import '../App.css';
 import Maps from '../components/Maps';
@@ -21,9 +21,7 @@ const About = ({ aboutRef }) => {
               contribute to the growth and success of a company
             </p>
             <p>
-              I am well-versed in various technologies, including React, JavaScript, Node, HTML/CSS, MongoDB and Git. In addition, I have a strong
-              track record as a lecturer and mentor, having received high student satisfaction scores for my engaging and comprehensive teaching
-              style.
+              I am experienced in various technologies, including React, JavaScript, Node.js, HTML/CSS and MongoDB.
             </p>
             <p>I am a quick learner, highly organized, and always ready to tackle new projects with enthusiasm.</p>
           </div>
@@ -49,7 +47,7 @@ const About = ({ aboutRef }) => {
               </li>
             </ul>
             <button>
-              <a href={pdf} download='yonatansalmon_cv.pdf'>
+              <a href={pdf} download='cv_yonatan_salmon.pdf'>
                 Download CV
               </a>
             </button>

@@ -15,22 +15,15 @@ const Nav = ({ homeRef, aboutRef, resumeRef, contactRef }) => {
   const handleNavClick = (item) => {
     setSelected(item.name);
     item.ref.current.scrollIntoView();
-    console.log(item.name);
-    console.log(selected);
 
   };
 
-  useEffect(() => {
-    console.log(selected);
-  }, [selected]);
 
   return (
     <ul className='NavContainer'>
       <img className='ProfilePic' src={ProfilePic} alt='yonatan' onClick={() => homeRef.current.scrollIntoView()}></img>
 
       {NavItems.map((item) => {
-        console.log(selected === item.name)
-
         return (
           <li
             className='NavItem'
